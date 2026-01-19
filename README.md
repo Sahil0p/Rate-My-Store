@@ -32,7 +32,7 @@ Frontend (React + Vite + Tailwind)
 │
 └── Axios Service
 ↓
-Backend (Node.js + Express)
+Backend (Node.js + Express + MongoDb)
 │
 ├── Routes
 │ ├── /auth
@@ -106,7 +106,7 @@ npm install
 
 - 🔐 Create Backend .env File
 
-> Create a file named .env inside the backend folder and add the following:
+> Create a file named `.env` inside the backend folder and add the following:
 ```
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
@@ -131,7 +131,7 @@ npm install
 ```
 - 🔐 Create Frontend .env File
 
-> Create a file named .env inside the frontend folder and add:
+> Create a file named `.env` inside the frontend folder and add:
 ```
 VITE_API_BASE_URL=http://localhost:5000
 ```
@@ -145,8 +145,8 @@ npm run dev
 
 
 ### ✅ Notes
-- Ensure MongoDB is running locally or use MongoDB Atlas
-- Restart servers after updating .env files
+- Ensure `MongoDB` is running locally or use `MongoDB Atlas`
+- Restart servers after updating `.env` files
 
 ---
 
@@ -168,7 +168,7 @@ npm run dev
 ### 🔗 Postman Collection Link
 
 👉 **Click here to open the Postman Collection:**  
-🔗 [RateMyStore](https://sahilahmed0029-3594081.postman.co/workspace/Sahil-Ahmed's-Workspace~507292b8-beec-4de7-81da-d9594af9042c/collection/47691689-06f3f8cf-6947-4b14-a061-a45fed7a5784?action=share&source=copy-link&creator=47691689)
+🔗 [**RateMyStore**](https://sahilahmed0029-3594081.postman.co/workspace/Sahil-Ahmed's-Workspace~507292b8-beec-4de7-81da-d9594af9042c/collection/47691689-06f3f8cf-6947-4b14-a061-a45fed7a5784?action=share&source=copy-link&creator=47691689)
 
 > This link will redirect you directly to Postman where you can fork or import the collection.
 
