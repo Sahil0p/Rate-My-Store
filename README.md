@@ -167,7 +167,7 @@ npm run dev
 
 ### 🔗 Postman Collection Link
 
-👉 **Click here to open the Postman Collection:**  🔗 [**RateMyStore**](https://sahilahmed0029-3594081.postman.co/workspace/Sahil-Ahmed's-Workspace~507292b8-beec-4de7-81da-d9594af9042c/collection/47691689-06f3f8cf-6947-4b14-a061-a45fed7a5784?action=share&source=copy-link&creator=47691689)
+👉 **Click here to open**  🔗 [**RateMyStore - Postman Collection**](https://sahilahmed0029-3594081.postman.co/workspace/Sahil-Ahmed's-Workspace~507292b8-beec-4de7-81da-d9594af9042c/collection/47691689-06f3f8cf-6947-4b14-a061-a45fed7a5784?action=share&source=copy-link&creator=47691689)
 
 > This link will redirect you directly to Postman where you can fork or import the collection.
 
