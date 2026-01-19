@@ -121,8 +121,7 @@ NODE_ENV=development
 npm run dev
 ```
 
-- Backend runs at:
-> http://localhost:5000
+- Backend runs at: `http://localhost:5000`
 
 ### 3️⃣ Frontend Setup
 
@@ -142,15 +141,12 @@ VITE_API_BASE_URL=http://localhost:5000
 npm run dev
 ```
 
-- Frontend runs at:
-> http://localhost:5173
+- Frontend runs at: `http://localhost:5173`
 
 ```
 ✅ Notes
-
-Ensure MongoDB is running locally or use MongoDB Atlas
-
-Restart servers after updating .env files
+- Ensure MongoDB is running locally or use MongoDB Atlas
+- Restart servers after updating .env files
 ```
 ---
 
