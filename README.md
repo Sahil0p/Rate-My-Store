@@ -143,11 +143,11 @@ npm run dev
 
 - Frontend runs at: `http://localhost:5173`
 
-```
-✅ Notes
+
+### ✅ Notes
 - Ensure MongoDB is running locally or use MongoDB Atlas
 - Restart servers after updating .env files
-```
+
 ---
 
 ## 🔐 Authentication Flow
