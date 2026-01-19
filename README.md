@@ -215,6 +215,53 @@ http://localhost:5000
 
 ---
 
+
+## 📡 API Endpoints Reference
+### 🔐 Authentication APIs
+| Method | Endpoint             | Description                         | Access        |
+| ------ | -------------------- | ----------------------------------- | ------------- |
+| POST   | `/api/auth/signup`   | Register a new user / owner / admin | Public        |
+| POST   | `/api/auth/login`    | Login and receive JWT token         | Public        |
+| PUT    | `/api/auth/password` | Update logged-in user password      | Authenticated |
+
+### 👨‍💼 Admin APIs
+| Method | Endpoint                | Description                                    | Access |
+| ------ | ----------------------- | ---------------------------------------------- | ------ |
+| GET    | `/api/admin/dashboard`  | Get system statistics (users, stores, ratings) | Admin  |
+| GET    | `/api/admin/users`      | Get all users                                  | Admin  |
+| GET    | `/api/admin/stores`     | Get all stores with owners                     | Admin  |
+| POST   | `/api/admin/stores`     | Create store (with image upload)               | Admin  |
+| PUT    | `/api/admin/stores/:id` | Update store details / image                   | Admin  |
+| DELETE | `/api/admin/stores/:id` | Delete store                                   | Admin  |
+
+### 👤 User APIs
+| Method | Endpoint                    | Description                   | Access |
+| ------ | --------------------------- | ----------------------------- | ------ |
+| GET    | `/api/user/stores`          | View all available stores     | User   |
+| POST   | `/api/user/rating/:storeId` | Submit or update rating (1–5) | User   |
+| GET    | `/api/user/rating/:storeId` | Get user’s rating for a store | User   |
+
+### 🏪 Owner APIs
+| Method | Endpoint                      | Description                                | Access |
+| ------ | ----------------------------- | ------------------------------------------ | ------ |
+| GET    | `/api/owner/dashboard`        | View owner stores with ratings & analytics | Owner  |
+| GET    | `/api/owner/ratings/:storeId` | View ratings for a specific store          | Owner  |
+
+### 🖼 Static File Access
+| Method | Endpoint                    | Description                  |
+| ------ | --------------------------- | ---------------------------- |
+| GET    | `/uploads/stores/:filename` | Access uploaded store images |
+
+### 🔐 Authorization Header (Required)
+
+- All protected APIs require the following header:
+```
+Authorization: Bearer <JWT_TOKEN>
+```
+
+> JWT token is generated during login and stored automatically in Postman.
+
+
 ## 🔒 Security Highlights
 
 - JWT-based authentication
